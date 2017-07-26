@@ -1,11 +1,8 @@
-# FROM debian:jessie-slim
-  # WORKING: ends up being 500MB+
-# FROM openjdk:8-jdk
-  # openjdk:8-jdk might sound like a good alternative, currently based on debian jessie, but Docker could switch that to apline some day? It's 600MB+!!
+# Thanks to Jacob Alberty <jacob.alberty@foundigital.com>
 FROM debian:jessie-slim
   # WORKING: work around openjdk issue which expects the man-page directory, failing to configure package if it doesn't
 
-MAINTAINER Jacob Alberty <jacob.alberty@foundigital.com>
+MAINTAINER Rykle Baron <ryklebaron@hotmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive \
   container=docker
